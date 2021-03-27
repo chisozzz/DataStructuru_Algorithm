@@ -37,7 +37,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int [] a={9,5,1,6,2,24,67,0,4};
+        int[] a = {9, 5, 1, 6, 2, 24, 67, 0, 4};
         //二分查找需要排序才能使用
         Arrays.sort(a);
         int result = sort(3, a);
