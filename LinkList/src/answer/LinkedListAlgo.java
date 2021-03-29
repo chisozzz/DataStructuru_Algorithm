@@ -90,7 +90,7 @@ public class LinkedListAlgo {
 	*/
    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode soldier = new ListNode(0); //利用哨兵结点简化实现难度 技巧三
-        ListNode p = soldier;
+        ListNode p = soldier;   //带头节点soldier，头指针p
         
         while ( l1 != null && l2 != null ){
             if ( l1.val < l2.val ){
@@ -106,7 +106,9 @@ public class LinkedListAlgo {
         
         if (l1 != null) { p.next = l1; }
         if (l2 != null) { p.next = l2; }
-        return soldier.next;   
+      //我们创建的带头结点的第二个结点后才是结果，哨兵完成了任务，退出,
+        //为什么不用p，因为p代表指针，soldier才是链表，这个时候p在末尾
+        return soldier.next;
     }
 
 
