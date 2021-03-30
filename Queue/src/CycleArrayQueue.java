@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class CycleArrayQueue {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CycleQueueFull queue = new CycleQueueFull(3);//初始化一个长度为三的队列,给rear+1预留了一个空间，最大存储空间就是3
+        //CycleQueue queue = new CycleQueue(4);//初始化一个长度为三的队列,给rear+1预留了一个空间，最大存储空间就是3
+        CycleQueueFull queue= new CycleQueueFull(3);//不预留空间的方法
         char key;  //声明key用于switch选择
         boolean loop = true;
         while (loop) {
