@@ -4,7 +4,7 @@ public class ArrayQueueDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayQueue queue=new ArrayQueue(3);//初始化一个长度为三的队列
-        char key=' ';
+        char key;//声明key用于switch选择
         boolean loop=true;
         while (loop){
             System.out.println("s(show)：显示队列");
