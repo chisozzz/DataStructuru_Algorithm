@@ -6,9 +6,9 @@ import java.util.Arrays;
 public class ShellSort {
     public static void main(String[] args) {
 //        int[]arr ={8,9,1,7,2,3,5,4,6,0};
-        int[] arr = new int[80000];
+        int[] arr = new int[8000000];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 80000);
+            arr[i] = (int) (Math.random() * 8000000);
         }
         long startTime = System.currentTimeMillis();
         shellSort(arr);
