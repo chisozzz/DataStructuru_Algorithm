@@ -4,8 +4,8 @@ public class AVLTreeDemo {
     public static void main(String[] args) {
 //        int arr[]={4,3,6,5,7,8};//用于左旋转
 //        int[] arr={10,12,8,9,7,6};//用于右旋转
-        int[] arr = {10, 11, 7, 6, 8, 9};//用于双旋转
-//        int[] arr = {2,1,6,5,7,3};//用于双旋转
+//        int[] arr = {10, 11, 7, 6, 8, 9};//用于双旋转
+        int[] arr = {2,1,6,5,7,3};//用于双旋转
         AVLTree avlTree = new AVLTree();
         for (int i : arr) {
             avlTree.add(new Node(i));
